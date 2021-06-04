@@ -89,4 +89,5 @@ Unirest) dass man quasi mittesten kann. MS-Frameworks (SpringBoot, Micronaut) bi
 Ergänzungen für Testing an. Es gibt auch *[Testcontainer](www.testcontainers.org)*
 
 ## Bilanz
+
 Pragmatisch, selektiv und effizient testen.

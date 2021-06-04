@@ -269,12 +269,15 @@ Damit können potentielle Probleme im System aufgedeckt werden.
 ## Scaling and Back Pressure
 
 Asynchrone Kommunikation hat viele Vorteile, aber es gibt auch einige Herausforderungen wenn das
-System stark ausgelastet ist. 
+System stark ausgelastet ist.
 
 ![Überlastung eines Consumers / Queue durch Heay-Load](images/scaling-backpressure.png){width=90%}
 
-Dauert dieser Zustand an, wächst die Queue ins unendliche. Eine Möglichkeit ist [Skalierung](#scale-anchor).
-Die andere Möglichkeit ist das Anwenden von *backpressure*-Strategien auf die Produzenten. Diese werden so verlangsamt.
+Dauert dieser Zustand an, wächst die Queue ins unendliche. Eine Möglichkeit
+ist [Skalierung](#scale-anchor). Die andere Möglichkeit ist das Anwenden von *backpressure*
+-Strategien auf die Produzenten. Diese werden so verlangsamt.
+
 * synchrones Ausbremsen
 * Load Shedding, Queue ist limitiert - Pakete werden verworfen wenn Threshold erreicht
-* Flow Control - Bandbreite wird limitiert, damit Producer ausgebremst werden -> RabbitMQ macht dies per default (kann anderes konfiguriert werden)
+* Flow Control - Bandbreite wird limitiert, damit Producer ausgebremst werden -> RabbitMQ macht dies
+  per default (kann anderes konfiguriert werden)

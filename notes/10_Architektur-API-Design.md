@@ -118,9 +118,9 @@ Skalierbarkeit der Infrastruktur (Load Balancing - Session auf gleichem Host hal
 
 ### Standardmethoden
 
-REST-konforme Applikationen verwendet die http-Methoden `GET`, `PUT`, `POST`, `DELETE`, usw. verbindlich.
-Diese sind als **idempotente** Methoden (ausser Post) zu implementieren. Können beliebig oft
-aufgerufen werden ohne Seiteneffekte.
+REST-konforme Applikationen verwendet die http-Methoden `GET`, `PUT`, `POST`, `DELETE`, usw.
+verbindlich. Diese sind als **idempotente** Methoden (ausser Post) zu implementieren. Können
+beliebig oft aufgerufen werden ohne Seiteneffekte.
 
 ### Identifizierung von Ressourcen
 
@@ -131,7 +131,9 @@ URI enthält **keine** Namen von Operationen.
 ### Schnittstellendesign
 
 Die Bezeichner werden typisch in *Mehrzahl* geschrieben. Die ID's sind **immer** Bestandteil des
-Pfades. Nur für Suchargumente werden zusätzliche Attribute übermittelt. Das heisst, dass über die gleiche URI verschiedene Aktionen ausgeführt werden. Unterscheidung lediglich durch die verwendete *http*-Methode (`GET`, `PUT`, `POST`, `DELETE`, usw.)
+Pfades. Nur für Suchargumente werden zusätzliche Attribute übermittelt. Das heisst, dass über die
+gleiche URI verschiedene Aktionen ausgeführt werden. Unterscheidung lediglich durch die verwendete *
+http*-Methode (`GET`, `PUT`, `POST`, `DELETE`, usw.)
 
 ### Rückgabewerte über Body und http-Statuscode
 

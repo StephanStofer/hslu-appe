@@ -41,4 +41,3 @@ Reihenfolge. Entspricht BPNM.
 
 Zeigt auf welche Features es überhaupt gibt und welche Kundengruppen diese verwenden können. Kann
 auch über einen Status Auskunft geben (Fertig, in Arbeit, geplant).
-
